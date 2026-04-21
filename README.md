@@ -56,6 +56,7 @@ The following examples are generated from local inference outputs and are provid
 .
 ├── assets/                 # Lightweight images used by README
 ├── evaluation/             # Offline evaluation scripts
+├── inference/              # Inference scripts
 ├── models/
 │   ├── WaveCloudNet.py      # Main model definition
 │   ├── BSRN_arch.py         # Basic convolution blocks
@@ -67,9 +68,6 @@ The following examples are generated from local inference outputs and are provid
 ├── metrics.py               # Image quality metrics
 ├── training_utils.py        # Logging, validation, and checkpoint helpers
 ├── train.py                 # Training entry point
-├── test_png.py              # Inference/evaluation for new_multi RGB data
-├── test_png_old.py          # Inference/evaluation for old_multi RGB data
-├── test_s2awest.py          # Inference for S2PatchDataset-style data
 └── requirements.txt
 ```
 
@@ -166,9 +164,9 @@ Training outputs such as checkpoints, TensorBoard logs, and intermediate visuali
 Use the script matching your dataset:
 
 ```bash
-python test_png.py
-python test_png_old.py
-python test_s2awest.py
+python inference/test_png.py
+python inference/test_png_old.py
+python inference/test_s2awest.py
 ```
 
 Each inference script loads `models.WaveCloudNet.WaveDH`, restores a checkpoint, runs batch inference, and saves prediction results.

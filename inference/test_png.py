@@ -2,9 +2,16 @@ import torch
 from torch.utils.data import DataLoader
 import numpy as np
 import os
+import sys
+from pathlib import Path
 from PIL import Image
 from skimage.metrics import structural_similarity as ssim
 from skimage.metrics import peak_signal_noise_ratio as psnr
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from dataset import Sen2_MTC_New_Multi
 from models.WaveCloudNet import WaveDH
 from lpips import LPIPS
