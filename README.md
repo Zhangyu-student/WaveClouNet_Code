@@ -55,6 +55,7 @@ The following examples are generated from local inference outputs and are provid
 ```text
 .
 ├── assets/                 # Lightweight images used by README
+├── evaluation/             # Offline evaluation scripts
 ├── models/
 │   ├── WaveCloudNet.py      # Main model definition
 │   ├── BSRN_arch.py         # Basic convolution blocks
@@ -189,6 +190,16 @@ checkpoints/
 Then update the checkpoint path in the corresponding training or inference script.
 
 ## Evaluation
+
+Offline evaluation scripts are placed under `evaluation/`.
+
+```bash
+python evaluation/eval.py
+python evaluation/eval_by_different_cloud_new.py
+python evaluation/eval_by_different_cloud_old.py
+python evaluation/eval_multi_folders.py
+python evaluation/eval_s2awest.py
+```
 
 The project includes PSNR, SSIM, SAM, LPIPS, and FID evaluation utilities. FID may require an Inception model file such as `inception-2015-12-05.pt`; this file is not part of the repository and should be downloaded or generated according to the evaluation library requirements.
 

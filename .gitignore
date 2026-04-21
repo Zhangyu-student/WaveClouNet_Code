@@ -41,6 +41,7 @@ data/
 datasets/
 s2awest/
 landsat/
+landsat_data_prepare/
 Sen2_MTC/
 multipleImage/
 
@@ -65,6 +66,8 @@ temp/
 *.tmp
 *.bak
 region_cloudiness*.txt
+assets/epoch_*.png
+visualize2.py
 
 # Large image/data artifacts generated during experiments
 *.npy
