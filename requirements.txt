@@ -1,0 +1,27 @@
+# Core deep learning
+torch
+torchvision
+
+# Numeric computing and image processing
+numpy
+pillow
+opencv-python
+tifffile
+
+# Training utilities and visualization
+matplotlib
+tqdm
+tensorboard
+
+# Image quality metrics
+scikit-image
+lpips
+clean-fid
+
+# Remote-sensing / geospatial evaluation
+rasterio
+scipy
+
+# Wavelet transform and model complexity analysis
+PyWavelets
+ptflops

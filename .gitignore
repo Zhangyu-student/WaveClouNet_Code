@@ -1,0 +1,73 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.iml
+
+# Logs
+*.log
+train_logs*.csv
+runs/
+
+# Model weights and pretrained metric models
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# Local datasets
+data/
+datasets/
+s2awest/
+landsat/
+Sen2_MTC/
+multipleImage/
+
+# Inference and evaluation outputs
+inference_results*/
+evaluation_results*/
+s2awest_result/
+visualization*/
+visualizations/
+
+# Paper-only figures, temporary analysis, and comparison baselines
+script/
+test/
+wavelet_components/
+compared_algorithm/
+models/ablation_model/
+models/tmp_no_use/
+
+# Temporary and local experiment files
+tmp/
+temp/
+*.tmp
+*.bak
+region_cloudiness*.txt
+
+# Large image/data artifacts generated during experiments
+*.npy
+*.npz
+*.tif
+*.tiff
